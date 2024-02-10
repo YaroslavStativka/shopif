@@ -1,0 +1,54 @@
+<div class="{% if section.settings.include_margins %}page-width{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+  {%- for block in section.blocks -%}
+    {% render block %}
+  {%- endfor -%}
+</div>
+
+{{ 'slick.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'jquery-3.7.1.min.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'slick.min.js' | asset_url }}" defer="defer"></script>
+<script>
+   $('.multiple-items').slick({
+      infinite: true,
+      slidesToShow: 3,
+  s   slidesToScroll: 1
+  });
+</script>
+<style>
+  body {
+    background: red;
+  }
+</style>
+{% schema %}
+  {
+    "name": "Slider Products",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "include_margins",
+        "default": true,
+        "label": "t:sections.apps.settings.include_margins.label"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "product",
+        "name": "Proposal product",
+        "settings": [
+          {
+            "type": "product",
+            "id": "proposal_product",
+            "label": "Our proposal Product"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Slider Products"
+      }
+    ]
+  }
+{% endschema %}
