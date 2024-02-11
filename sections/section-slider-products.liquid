@@ -10,7 +10,7 @@
           {%- for block in section.blocks -%}
             {%- if block.settings.proposal_product != blank -%}
               {%- assign product = block.settings.proposal_product -%}
-              <div class="slider-product-proposal__slider-item">
+              <div class="slider-product-proposal__slider-item slider-item">
                 <div class="slider-item__image">
                   <img
                     src="{{ product.featured_image |  image_url: width: 400 }}"
@@ -22,8 +22,9 @@
                   {{ product.title }}
                 </h4>
                 {%- if product.content != blank -%}
-                  <div class="slider-item__content">{{ product.content | truncate: 220, "..." }}</div>
+                  <div>{{ product.content }}</div>
                 {%- endif -%}
+                <div class="slider-item_price">{{ product.price | money_with_currency }}</div>
               </div>
             {%- endif -%}
           {%- endfor -%}
