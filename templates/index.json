@@ -66,15 +66,23 @@
           "settings": {
             "proposal_product": "уги"
           }
+        },
+        "product_GwWMKY": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "уги"
+          }
         }
       },
       "block_order": [
         "product_Vw9bBf",
         "product_VUJPYY",
         "product_MUzDbd",
-        "product_HNAFTi"
+        "product_HNAFTi",
+        "product_GwWMKY"
       ],
       "settings": {
+        "items": 2
       }
     }
   },
