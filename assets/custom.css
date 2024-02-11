@@ -1,0 +1,137 @@
+.slider-product-proposal {
+   padding: 50px 0px;
+}
+
+.page-width {}
+
+.slider-product-proposal__container {}
+
+.slider-product-proposal__content {}
+
+.slider-product-proposal__title {
+   display: flex;
+   font-size: 52px;
+   font-weight: 600;
+   line-height: 110%;
+   color: #000132;
+   margin-bottom: 20px;
+}
+
+.slider-product-proposal__subtitle {
+   display: flex;
+   font-size: 32px;
+   font-weight: 400;
+   line-height: 110%;
+   margin-bottom: 20px;
+}
+
+.slider-product-proposal__slider {}
+
+.slider-product-proposal__slider-list {}
+
+.slider-product-proposal__slider-item {
+   display: flex;
+   flex-direction: column;
+   margin: 0px 10px;
+}
+
+.slider-item {}
+
+.slider-item__link {}
+
+.slider-item__image {
+   position: relative;
+   width: 100%;
+   padding-top: 100%;
+   overflow: hidden;
+}
+
+.slider-item_picture {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.slider-item__title {}
+
+.slider-item_price {}
+
+/* slick start */
+.slick-slider {
+   position: relative;
+}
+
+.slick-slider .slick-arrow {
+   position: absolute;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   z-index: 2;
+   font-size: 0;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   border: 1px solid #000132;
+   background: #FFFFFF;
+   cursor: pointer;
+   transition: all 0.3s;
+
+}
+
+.slick-slider .slick-arrow:hover {
+   background: #929292;
+   transition: all 0.3s;
+}
+
+.slick-slider .slick-arrow::before,
+.slick-slider .slick-arrow::after {
+   content: "";
+   width: 20px;
+   height: 3px;
+   background: #000132;
+   cursor: pointer;
+   position: absolute;
+}
+
+.slick-slider .slick-prev {
+   left: 20px;
+   top: 35%;
+}
+
+.slick-slider .slick-next {
+   position: absolute;
+   display: flex;
+   right: 20px;
+   top: 35%;
+}
+
+.slick-slider .slick-prev::before {
+   transform: rotate(-45deg);
+   left: 10px;
+   top: 16.5px;
+}
+
+.slick-slider .slick-prev::after {
+   transform: rotate(45deg);
+   left: 10px;
+   bottom: 16.5px;
+}
+
+.slick-slider .slick-next::before {
+   transform: rotate(45deg);
+   right: 10px;
+   top: 16.5px;
+}
+
+.slick-slider .slick-next::after {
+   transform: rotate(-45deg);
+   right: 10px;
+   bottom: 16.5px;
+}
+
+
+
+/* slick end */

@@ -14,7 +14,7 @@
                 <a href="{{ product.url }}" class="slider-item__link"></a>
                 <div class="slider-item__image">
                   <img
-                    src="{{ product.featured_image | image_url: width: 500, height: 500 }}"
+                    src="{{ product.featured_image | image_url: width: full }}"
                     alt="{{ product.featured_image.alt }}"
                     class="slider-item_picture"
                     loading="lazy"
@@ -43,8 +43,29 @@
    document.addEventListener("DOMContentLoaded", function() {
       $('#shopify-section-{{section.id}} .slider-product-proposal__slider-list').slick({
          infinite: true,
-         slidesToShow: {{section.settings.items}},
-         slidesToScroll: 1
+         slidesToShow: {{section.settings.slider_items}},
+         slidesToScroll: 1,
+         responsive: [
+         {
+           breakpoint: 1024,
+           settings: {
+             slidesToShow: {{section.settings.slider_items}},
+           }
+         },
+         {
+           breakpoint: 600,
+           settings: {
+             slidesToShow: {{section.settings.slider_items_tab}},
+           }
+         },
+         {
+           breakpoint: 480,
+           settings: {
+             slidesToShow: {{section.settings.slider_items_mob}},
+            
+          }
+         }
+      ]
       });
   });
 </script>
@@ -57,12 +78,28 @@
     "settings": [
       {
         "type": "range",
-        "id": "items",
+        "id": "slider_items",
         "min": 1,
         "max": 4,
         "step": 1,
-        "label": "items per slider",
+        "label": "items per slider desktop",
+        "default": 3
+      }, {
+        "type": "range",
+        "id": "slider_items_tab",
+        "min": 1,
+        "max": 4,
+        "step": 1,
+        "label": "items per slider tab",
         "default": 2
+      }, {
+        "type": "range",
+        "id": "slider_items_mob",
+        "min": 1,
+        "max": 4,
+        "step": 1,
+        "label": "items per slider mobile",
+        "default": 1
       }
     ],
     "blocks": [
