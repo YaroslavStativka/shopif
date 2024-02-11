@@ -66,16 +66,25 @@
           "settings": {
             "proposal_product": "уги"
           }
+        },
+        "product_M4ipDW": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "уги"
+          }
         }
       },
       "block_order": [
         "product_Vw9bBf",
         "product_VUJPYY",
         "product_MUzDbd",
-        "product_HNAFTi"
+        "product_HNAFTi",
+        "product_M4ipDW"
       ],
       "settings": {
-        "items": 3
+        "slider_items": 4,
+        "slider_items_tab": 3,
+        "slider_items_mob": 2
       }
     },
     "section_slider_products_qTpqMm": {
@@ -127,7 +136,9 @@
         "product_niHqyh"
       ],
       "settings": {
-        "items": 4
+        "slider_items": 3,
+        "slider_items_tab": 2,
+        "slider_items_mob": 1
       }
     }
   },
