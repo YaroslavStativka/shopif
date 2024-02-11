@@ -22,7 +22,7 @@
                   {{ product.title }}
                 </h4>
                 {%- if product.content != blank -%}
-                  <div>{{ product.content }}</div>
+                  <div>{{ product.content | truncate: 120, "..." }}</div>
                 {%- endif -%}
                 <div class="slider-item_price">{{ product.price | money_with_currency }}</div>
               </div>
