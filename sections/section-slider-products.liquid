@@ -28,8 +28,10 @@
 <script>
    document.addEventListener("DOMContentLoaded", function() {
       $('#shopify-section-{{section.id}} .slider-product-proposal__slider-list').slick({
-     
-     });
+         infinite: true,
+         slidesToShow: {{section.settings.items}},
+         slidesToScroll: 1
+      });
   });
 </script>
 
@@ -40,10 +42,13 @@
     "class": "section",
     "settings": [
       {
-        "type": "checkbox",
-        "id": "include_margins",
-        "default": true,
-        "label": "t:sections.apps.settings.include_margins.label"
+        "type": "range",
+        "id": "items",
+        "min": 1,
+        "max": 4,
+        "step": 1,
+        "label": "items per slider",
+        "default": 2
       }
     ],
     "blocks": [
