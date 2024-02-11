@@ -77,10 +77,42 @@
       "settings": {
         "items": 2
       }
+    },
+    "section_slider_products_7xrJrt": {
+      "type": "section-slider-products",
+      "blocks": {
+        "product_R8RnAV": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "кеды"
+          }
+        },
+        "product_f9fKbq": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "уги"
+          }
+        },
+        "product_yFA9rU": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "кеды"
+          }
+        }
+      },
+      "block_order": [
+        "product_R8RnAV",
+        "product_f9fKbq",
+        "product_yFA9rU"
+      ],
+      "settings": {
+        "items": 2
+      }
     }
   },
   "order": [
     "image_banner",
-    "section_slider_products_yeAhmt"
+    "section_slider_products_yeAhmt",
+    "section_slider_products_7xrJrt"
   ]
 }
