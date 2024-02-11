@@ -54,11 +54,25 @@
           "settings": {
             "proposal_product": "уги"
           }
+        },
+        "product_MUzDbd": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "кеды"
+          }
+        },
+        "product_HNAFTi": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "уги"
+          }
         }
       },
       "block_order": [
         "product_Vw9bBf",
-        "product_VUJPYY"
+        "product_VUJPYY",
+        "product_MUzDbd",
+        "product_HNAFTi"
       ],
       "settings": {
         "include_margins": true
