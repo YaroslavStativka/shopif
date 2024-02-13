@@ -1,5 +1,10 @@
 {
   "sections": {
+    "image_get_links_xkAHFV": {
+      "type": "image-get-links",
+      "settings": {
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -143,6 +148,7 @@
     }
   },
   "order": [
+    "image_get_links_xkAHFV",
     "image_banner",
     "section_slider_products_yeAhmt",
     "section_slider_products_qTpqMm"
