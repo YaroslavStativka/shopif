@@ -1,10 +1,12 @@
-<div style="background-color: red; padding: 20px;"></div>
+<div style="border: 1px solid orange; paddin: 20px;">
+  {{ product.variants[0].title }}  {{ product.variants[0].id }}
+</div>
 
 {% schema %}
   {
     "name": "Product object",
     "tag": "section",
-    "class": "section",
+    "class": "section product-object-section",
     "settings": [],
     "presets": [
       {
